@@ -1,4 +1,4 @@
-﻿using FolderFormatter.Domain.Interfaces;
+﻿using FolderFormatter.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace FolderFormatter.EventLoggers
 {
-    public class EventLogger
+    public class EventLogger : IEventLogger
     {
         public void AppendEvent(System.Windows.Forms.RichTextBox eventLogTxt, string eventMeggase)
         {

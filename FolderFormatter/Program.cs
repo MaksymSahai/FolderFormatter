@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FolderFormatter.Domain.Interfaces;
-using FolderFormatter.Domain.Providers;
+using FolderFormatter.EventLoggers;
+using FolderFormatter.Interfaces;
+using FolderFormatter.Providers;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace FolderFormatter
@@ -16,7 +17,10 @@ namespace FolderFormatter
         static void ConfigureServices()
         {
             var services = new ServiceCollection();
+
             services.AddTransient<IConfiguration, ConfigurationProvider>();
+            services.AddTransient<IEventLogger, EventLogger>();
+
             ServiceProvider = services.BuildServiceProvider();
         }
 

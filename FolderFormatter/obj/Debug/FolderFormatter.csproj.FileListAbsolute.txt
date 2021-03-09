@@ -1,13 +1,11 @@
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\FolderFormatter.exe.config
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\FolderFormatter.exe
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\FolderFormatter.pdb
-D:\Development\FolderFormatter\FolderFormatter\bin\Debug\FolderFormatter.Domain.dll
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\Microsoft.Extensions.DependencyInjection.dll
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\System.Threading.Tasks.Extensions.dll
-D:\Development\FolderFormatter\FolderFormatter\bin\Debug\FolderFormatter.Domain.pdb
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\Microsoft.Extensions.DependencyInjection.xml
 D:\Development\FolderFormatter\FolderFormatter\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml

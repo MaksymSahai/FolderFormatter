@@ -1,4 +1,4 @@
-﻿using FolderFormatter.Domain.Interfaces;
+﻿using FolderFormatter.Interfaces;
 using FolderFormatter.Fomrs;
 using System;
 using System.Collections.Generic;
@@ -16,12 +16,12 @@ namespace FolderFormatter
     public partial class FolderFormatterForm : Form
     {
         private readonly IConfiguration _configuration;
-        private readonly EventLogger _eventLogger;
+        private readonly IEventLogger _eventLogger;
 
         public FolderFormatterForm()
         {
             _configuration = (IConfiguration)Program.ServiceProvider.GetService(typeof(IConfiguration));
-            _eventLogger = new EventLogger();
+            _eventLogger = (IEventLogger)Program.ServiceProvider.GetService(typeof(IEventLogger));
             InitializeComponent();
         }
 
@@ -51,6 +51,12 @@ namespace FolderFormatter
 
         private void RuBtn_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrWhiteSpace(this.PathToSourceTxt.Text))
+            {
+                MessageBox.Show("Path to source files cannot be null or empty", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             var eventMessage = new StringBuilder();
             eventMessage.Append(@"{\rtf1\ansi \b Execution Started! \b}");
             _eventLogger.AppendEvent(this.EventLogTxt, eventMessage.ToString());

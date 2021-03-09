@@ -32,7 +32,7 @@ namespace FolderFormatter
             this.PathToSourceLbl = new System.Windows.Forms.Label();
             this.ConfigurationLbl = new System.Windows.Forms.Label();
             this.EventsLogLbl = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.PathToSourceTxt = new System.Windows.Forms.TextBox();
             this.ConfigurationDdl = new System.Windows.Forms.ComboBox();
             this.AddConfigurationBtn = new System.Windows.Forms.Button();
             this.RunBtn = new System.Windows.Forms.Button();
@@ -66,12 +66,12 @@ namespace FolderFormatter
             this.EventsLogLbl.TabIndex = 2;
             this.EventsLogLbl.Text = "Events Log";
             // 
-            // textBox1
+            // PathToSourceTxt
             // 
-            this.textBox1.Location = new System.Drawing.Point(115, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(387, 22);
-            this.textBox1.TabIndex = 3;
+            this.PathToSourceTxt.Location = new System.Drawing.Point(115, 10);
+            this.PathToSourceTxt.Name = "PathToSourceTxt";
+            this.PathToSourceTxt.Size = new System.Drawing.Size(387, 22);
+            this.PathToSourceTxt.TabIndex = 3;
             // 
             // ConfigurationDdl
             // 
@@ -124,7 +124,7 @@ namespace FolderFormatter
             this.Controls.Add(this.RunBtn);
             this.Controls.Add(this.AddConfigurationBtn);
             this.Controls.Add(this.ConfigurationDdl);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.PathToSourceTxt);
             this.Controls.Add(this.EventsLogLbl);
             this.Controls.Add(this.ConfigurationLbl);
             this.Controls.Add(this.PathToSourceLbl);
@@ -141,7 +141,7 @@ namespace FolderFormatter
         private System.Windows.Forms.Label PathToSourceLbl;
         private System.Windows.Forms.Label ConfigurationLbl;
         private System.Windows.Forms.Label EventsLogLbl;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox PathToSourceTxt;
         private System.Windows.Forms.ComboBox ConfigurationDdl;
         private System.Windows.Forms.Button AddConfigurationBtn;
         private System.Windows.Forms.Button RunBtn;
