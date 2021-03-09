@@ -107,6 +107,7 @@ namespace FolderFormatter
             // 
             // EventLogTxt
             // 
+            this.EventLogTxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.EventLogTxt.Location = new System.Drawing.Point(559, 46);
             this.EventLogTxt.Name = "EventLogTxt";
             this.EventLogTxt.ReadOnly = true;
