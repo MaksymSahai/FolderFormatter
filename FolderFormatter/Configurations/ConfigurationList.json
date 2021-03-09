@@ -1,0 +1,17 @@
+[
+  {
+    "UserName": "Test one",
+    "TechName": "TestOne",
+    "TagSeparator": " "
+  },
+  {
+    "UserName": "Test two",
+    "TechName": "TestTwo",
+    "TagSeparator": "-"
+  },
+  {
+    "UserName": "Test three",
+    "TechName": "TestThree",
+    "TagSeparator": "_"
+  }
+]
